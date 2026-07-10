@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="240" height="240" role="img" aria-label="Smiley thumbs up">
+  <defs>
+    <radialGradient id="faceGrad" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="100%" stop-color="#F5B800"/>
+    </radialGradient>
+    <linearGradient id="thumbGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFD34D"/>
+      <stop offset="100%" stop-color="#E8A800"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Face -->
+  <circle cx="100" cy="90" r="70" fill="url(#faceGrad)" stroke="#8A6D00" stroke-width="3"/>
+
+  <!-- Eyes -->
+  <circle cx="78" cy="80" r="7" fill="#2A2A2A"/>
+  <circle cx="122" cy="80" r="7" fill="#2A2A2A"/>
+  <circle cx="80" cy="78" r="2" fill="#FFFFFF"/>
+  <circle cx="124" cy="78" r="2" fill="#FFFFFF"/>
+
+  <!-- Smile -->
+  <path d="M70 105 Q100 135 130 105" stroke="#2A2A2A" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Thumbs up (fist + thumb) -->
+  <g transform="translate(120,120) rotate(-15)">
+    <!-- Fist -->
+    <rect x="0" y="0" width="55" height="55" rx="14" ry="14" fill="url(#thumbGrad)" stroke="#8A6D00" stroke-width="3"/>
+    <!-- Knuckle lines -->
+    <path d="M8 18 H47 M8 32 H47 M8 46 H47" stroke="#8A6D00" stroke-width="1.5" fill="none" opacity="0.6"/>
+    <!-- Thumb -->
+    <path d="M10 -2 Q22 -30 40 -18 Q46 -14 42 -4 L42 4 Z" fill="url(#thumbGrad)" stroke="#8A6D00" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+</svg>
